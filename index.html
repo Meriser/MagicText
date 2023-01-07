@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./images//yabe_icon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法產生器</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./all.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="wrap my-4 mx-auto">
+        <h1 class="header__title text-secondary fw-bold ps-4" data-aos="zoom-in">魔法產生器</h1>
+        <div class="input__wrap" data-aos="zoom-in">
+            <input id="title" class="d-block border border-primary my-3 rounded-2" type="text" placeholder="輸入主題">
+            <input id="strNum" class="border border-primary rounded-2" type="number" placeholder="1 ~ 500 字">
+            <!-- 提交 -->
+            <input id="submit" class="btn btn-primary ms-2" type="submit" value="產生">
+        </div>
+    </header>
+    <hr class="bg-primary border my-4">
+
+    <main>
+        <p class="output text-secondary mx-auto my-5 px-1" id="output">
+            <img src="./images/Yabe.png" class="yabe mx-auto mb-4 p-1" alt="oAo">
+            <span class="d-block text-center h6" data-aos="fade-down">耶比：等打字的時間我都快睡著了ˊ ˇ ˋ</span>
+        </p>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p class="footer__info m-0">- Developed by Meri -</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./all.js"></script>
+</body>
+
+</html>

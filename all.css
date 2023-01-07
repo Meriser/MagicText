@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+img {
+    display: block;
+}
+
+.wrap {
+    max-width: 300px;
+}
+
+.output {
+    max-width: 600px;
+}
+
+
+.input__wrap {
+    border-left: 5px solid dodgerblue;
+    padding-left: 1rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #4888e9;
+    color: aliceblue;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 414px) {
+    .header__title {
+        text-align: center;
+        font-size: 2rem !important;
+    }
+    .wrap , .output {
+        padding: 0 0.125rem;
+    }
+}
+
+.yabe {
+    max-width: 80px;
+    animation-name: rotate-keyframe;
+    /* 套用的 keyframe */
+    animation-duration: 15s;
+    /* 動畫持續時間 */
+    animation-iteration-count: infinite;
+    /* 動畫播放次數 */
+    animation-timing-function: linear;
+    /* 影片加速速率 */
+}
+
+@keyframes rotate-keyframe {
+
+    /* 定義每個階段的影格變化  */
+    from {
+        /* 定義元素在該影格所套用的樣式 */
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
